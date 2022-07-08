@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <title>The Quiz</title>
+</head>
+
+<body>
+    <h1 class="heading">Lets Go!</h1>
+    <p id="nameholder">your name goes here</p>
+
+    <input label="name" type="text" name="username" id="login"><button id="submit">submit</button></input>
+
+    <div id="quiz"></div>
+    <h2>Score:<span id="score">0</span></h2>
+
+
+    <div class="container">
+        <form action="action_page.php">
+
+            <label for="subject">Feedback</label>
+            <textarea id="subject" name="subject" placeholder="type here.." style="height:200px"></textarea>
+
+            <input type="submit" value="Submit">
+
+        </form>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
