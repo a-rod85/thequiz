@@ -154,3 +154,35 @@ button,
     perspective: 1000px;
     cursor: pointer;
 }
+
+.card--flipped .card_inner {
+    transform: rotateY(180deg);
+}
+
+.card_inner {
+    position: relative;
+    border-radius: 10px;
+    width: 100%;
+    min-height: 220px;
+    height: auto;
+}
+
+.card_inner {
+    transition: transform .25s ease-in-out;
+    transform-origin: 50% 50%;
+    transform-style: preserve-3d;
+    box-shadow: 0px 0px 15px -5px #000000;
+    -webkit-box-shadow: 0px 0px 15px -5px #000000;
+}
+
+.card_front {
+    background-color: rgb(209, 212, 18);
+    background-color: steelblue;
+    background-color: steelblue;
+}
+
+.card_back {
+    background-color: steelblue;
+    transform: rotateY(180deg);
+}
+
