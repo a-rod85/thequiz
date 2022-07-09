@@ -51,3 +51,19 @@ function test2() {
     feedback_button.onclick = showFeedback
     theGame()
 }
+
+function theGame() {
+
+    let col = 0
+    genres.forEach(genre => {
+        col++
+        const column = document.createElement('div')
+        const columnTitle = document.createElement('div')
+
+        column.classList.add('genre-column')
+        column.classList.add(`col-${col}`)
+        columnTitle.classList.add('col-title')
+        columnTitle.innerHTML = genre.name
+
+        quiz.append(column)
+        column.append(columnTitle)
