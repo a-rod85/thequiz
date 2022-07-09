@@ -1,6 +1,7 @@
 const gameName = 'The Quizmania'
 const body = document.getElementById('body')
-   
+    //const title = document.getElementById('title')
+    //const subtitle = document.getElementById('subtitle')
 const userform = document.getElementById('userform')
 const score = document.getElementById('score')
 const scoretitle = document.getElementById('scoretitle')
@@ -9,7 +10,7 @@ const quiz = document.getElementById('quiz')
 
 const feedback_button = document.getElementById('feedback_button')
 
-var username = "Aaron"
+var username = "Tim"
 
 var count = 0
 
@@ -55,6 +56,7 @@ function theGame() {
 
     let col = 0
     genres.forEach(genre => {
+
         col++
         const column = document.createElement('div')
         const columnTitle = document.createElement('div')
@@ -69,8 +71,51 @@ function theGame() {
 
         levels.forEach(level => {
 
+            const card = document.createElement('div')
+            const card_inner = document.createElement('div')
+            const card_front = document.createElement('div')
+            const card_back = document.createElement('div')
+            const card_value = document.createElement('div')
+            const card_question = document.createElement('div')
+            const card_buttons = document.createElement('div')
+            const trueButton = document.createElement('button')
+            const falseButton = document.createElement('button')
+
+            column.append(card)
+            card.append(card_inner)
+            card_inner.append(card_front, card_back)
+            card_front.append(card_value)
+            card_back.append(card_question, card_buttons)
+            card_buttons.append(trueButton, falseButton)
+
+            card.classList.add('card')
+            card_inner.classList.add('card_inner')
+            card_front.classList.add('card_front')
+            card_back.classList.add('card_back')
+            card_value.classList.add('value')
+            card_question.classList.add('question')
+            card_buttons.classList.add('buttons')
+            trueButton.classList.add('true')
+            falseButton.classList.add('false')
+
+            card_value.innerHTML = level.id
+            trueButton.innerHTML = 'True'
+            falseButton.innerHTML = 'False'
+
+            fetch(`https://opentdb.com/api.php?amount=1&category=${genre.id}&difficulty=${level.name}&type=boolean`)
+                .then(response => response.json())
+                .then(response => {
+                    card.setAttribute('question', response.results[0].question);
+                    card.setAttribute('answer', response.results[0].correct_answer);
+                    card.setAttribute('value', level.id);
+                    card_question.innerHTML = card.getAttribute('question');
+                })
+
+            card.onclick = cardturns
+            trueButton.onclick = getResult
+            falseButton.onclick = getResult
         })
-    })    
+    })
 }
 
 function cardturns() {
