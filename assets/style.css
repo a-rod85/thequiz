@@ -186,3 +186,13 @@ button,
     transform: rotateY(180deg);
 }
 
+.card_correct {
+    background-color: green;
+    color: #fff;
+}
+
+.card_false {
+    background-color: darkred;
+    color: #fff;
+}
+
