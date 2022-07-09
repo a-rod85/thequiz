@@ -67,3 +67,9 @@ function theGame() {
 
         quiz.append(column)
         column.append(columnTitle)
+
+        levels.forEach(level => {
+
+        })
+    })    
+}
