@@ -73,3 +73,47 @@ function theGame() {
         })
     })    
 }
+
+function cardturns() {
+    this.classList.toggle('card--flipped')
+}
+
+function getResult() {
+    const card = this.parentElement.parentElement.parentElement.parentElement
+    if (card.getAttribute('answer') === this.innerHTML) {
+        count = count + parseInt(card.getAttribute('value'))
+        scorecount.innerHTML = parseInt(scorecount.innerText) + parseInt(card.getAttribute('value'))
+        card.classList.add('card_correct')
+        card.innerHTML = card.getAttribute('value')
+    } else {
+        card.classList.add('card_false')
+        card.innerHTML = 0
+    }
+}
+
+startup()
+
+function getResult() {
+    const card = this.parentElement.parentElement.parentElement.parentElement
+    if (card.getAttribute('answer') === this.innerHTML) {
+        count = count + parseInt(card.getAttribute('value'))
+        scorecount.innerHTML = parseInt(scorecount.innerText) + parseInt(card.getAttribute('value'))
+        card.classList.add('card_correct')
+        card.innerHTML = card.getAttribute('value')
+    } else {
+        card.classList.add('card_false')
+        card.innerHTML = 0
+    }
+}
+
+startup()
+
+function feedbackSubmit() {
+    console.log(document.getElementById('feedback_textarea').value)
+    closeFeedback()
+    return false
+}
+
+function closeFeedback() {
+    feedback.style.display = "none"
+}
