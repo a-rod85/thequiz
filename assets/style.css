@@ -56,3 +56,50 @@ body {
     height: 35px;
     margin: 0px;
 }
+
+.userform_submit:hover,
+.feedback_button:hover,
+.feedback_submit:hover {
+    background: #386890;
+}
+
+.quiz {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.col-1,
+.col-2,
+.col-3,
+.col-4 {
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    text-align: center;
+}
+
+.col-title {
+    font-size: 18px;
+}
+
+.card .value {
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+}
+
+.card .question {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+}
+
+.card .buttons {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+}
