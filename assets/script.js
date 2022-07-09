@@ -1,7 +1,6 @@
 const gameName = 'The Quizmania'
 const body = document.getElementById('body')
-    //const title = document.getElementById('title')
-    //const subtitle = document.getElementById('subtitle')
+   
 const userform = document.getElementById('userform')
 const score = document.getElementById('score')
 const scoretitle = document.getElementById('scoretitle')
