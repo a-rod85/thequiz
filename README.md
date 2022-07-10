@@ -14,9 +14,9 @@ Aaron's QuizMania
     ⊛Design Goals
     ⊛Design Choices
         ∙Font
-        ∙Color Scheme
-        ∙Images
-    ⊛Wireframes
+        
+        
+   
 
 ◉Features
     ⊛Design Features
@@ -145,7 +145,7 @@ Wanted the user (if they have watched it ) to have the same feeling.
     ∙ A Leader Scoreboard 
     ∙ A comment section
     
-##Testing
+## Testing
 
 
 
@@ -155,6 +155,10 @@ Wanted the user (if they have watched it ) to have the same feeling.
 Testing was done manually throughout the development process. 
 
 ## Bugs
+
+ ∙ Had pains in identifying why database wasn't being connected and loaded (eventually pain got resolved)
+ 
+ ∙ Had pains with my git commits (eventually pain got resolved)
 
  ∙ Cards initially would show the question double
 
