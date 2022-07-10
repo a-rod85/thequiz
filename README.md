@@ -156,8 +156,14 @@ Testing was done manually throughout the development process.
 
 ## Bugs
 
+ ∙ Cards initially would show the question double
 
-![Skärmbild (69)](https://user-images.githubusercontent.com/102023928/178122739-d40a637f-6acc-445c-9183-9200823e83a5.png)
+ ∙ Username was not responsive
+
+ ∙ On the feedback section the user would get this message after clicking submit
+   (none responsive)
+
+![Skärmbild (110)](https://user-images.githubusercontent.com/102023928/178134064-9ce5b66c-7973-4e3d-87e4-89bd882f4064.png)
 
 
 
