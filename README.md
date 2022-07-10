@@ -209,5 +209,9 @@ CodeInstitue
 
 The slack community.
 
+My goods friend Tim and Alex for pushing me when I thought it wasnt possible 
+helping me to use my common sense during this challenge.
+
+
 
 
